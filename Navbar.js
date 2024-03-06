@@ -19,7 +19,7 @@ function Navbar() {
                     My Navbar
                 </Typography>
                 <Button color="inherit" onClick={() => handleNavigate('/game')}>Mäng</Button>
-                <Button color="inherit" onClick={() => handleNavigate('/settings.xaml')}>Seaded</Button>
+                <Button color="inherit" onClick={() => handleNavigate('/settings')}>Seaded</Button>
                 <Button color="inherit" onClick={() => handleNavigate('/scoreboard')}>Skooritabel</Button>
                 <Button color="inherit" onClick={() => handleNavigate('/shop')}>Pood</Button>
             </Toolbar>

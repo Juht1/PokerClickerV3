@@ -4,6 +4,7 @@ namespace PokerClickerV3;
 
 public partial class Settings : ContentPage
 {
+    int count = 0;
     private IAudioManager audioManager;
 
     public Settings(IAudioManager audioManager)

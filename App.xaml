@@ -11,4 +11,17 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
+
+    <Application.MainPage>
+        <Shell>
+            <TabBar x:Name="PhoneTabs">
+                <Tab Title="Home" Icon="poker.svg">
+                    <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
+                </Tab>
+                <Tab Title="Settings" Icon="poker.svg">
+                    <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
+                </Tab>
+            </TabBar>
+        </Shell>
+    </Application.MainPage>
 </Application>
