@@ -1,4 +1,6 @@
-﻿namespace PokerClickerV3;
+﻿using Plugin.Maui.Audio;
+
+namespace PokerClickerV3;
 
 public static class MauiProgram
 {
@@ -13,6 +15,9 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
 
-		return builder.Build();
+        builder.Services.AddSingleton(AudioManager.Current);
+        builder.Services.AddTransient<MainPage>();
+
+        return builder.Build();
 	}
 }
